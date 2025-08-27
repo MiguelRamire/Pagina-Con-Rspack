@@ -1,4 +1,5 @@
 import './styles.scss';
+import './styles.css'
 // Variables globales
 let currentSlide = 0;
 let slideInterval;
