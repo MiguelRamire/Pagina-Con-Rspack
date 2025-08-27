@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "name": "taller1ppe---copia",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "dev": "rspack serve --mode=development",
+    "build": "rspack build --mode=production",
+    "preview": "npx serve dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelRamire/Pagina-Con-Rspack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelRamire/Pagina-Con-Rspack/issues"
+  },
+  "homepage": "https://github.com/MiguelRamire/Pagina-Con-Rspack#readme",
+  "description": "",
+  "devDependencies": {
+    "@rspack/cli": "^1.4.11",
+    "@rspack/core": "^1.4.11",
+    "@rspack/dev-server": "^1.1.4",
+    "css-loader": "^7.1.2",
+    "html-rspack-plugin": "^6.1.2",
+    "sass-embedded": "^1.90.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0"
+  }
+}

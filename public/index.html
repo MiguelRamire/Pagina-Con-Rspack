@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVision - Innovación Tecnológica</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Sticky Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-rocket"></i>
+                <span>TechVision</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#inicio" class="nav-link" data-translate="nav.home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servicios" class="nav-link" data-translate="nav.services">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#galeria" class="nav-link" data-translate="nav.gallery">Galería</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#video" class="nav-link" data-translate="nav.video">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link" data-translate="nav.contact">Contacto</a>
+                </li>
+            </ul>
+            <div class="language-selector">
+                <button class="lang-btn" id="langBtn">
+                    <i class="fas fa-globe"></i>
+                    <span id="currentLang">ES</span>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="#" data-lang="es" class="lang-option active">Español</a>
+                    <a href="#" data-lang="en" class="lang-option">English</a>
+                    <a href="#" data-lang="fr" class="lang-option">Français</a>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="inicio">
+        <div class="header-content">
+            <h1 data-translate="header.title">Innovación Tecnológica</h1>
+            <p data-translate="header.subtitle">Transformando ideas en soluciones digitales</p>
+            <a href="#servicios" class="cta-button" data-translate="header.cta">Descubre Más</a>
+        </div>
+    </header>
+
+    <!-- Rotador - Slider -->
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider-slide active">
+                <div class="slider-content">
+                    <h2 data-translate="slider.slide1.title">Desarrollo Web</h2>
+                    <p data-translate="slider.slide1.description">Creamos sitios web modernos y responsives</p>
+                </div>
+            </div>
+            <div class="slider-slide">
+                <div class="slider-content">
+                    <h2 data-translate="slider.slide2.title">Aplicaciones Móviles</h2>
+                    <p data-translate="slider.slide2.description">Soluciones nativas para iOS y Android</p>
+                </div>
+            </div>
+            <div class="slider-slide">
+                <div class="slider-content">
+                    <h2 data-translate="slider.slide3.title">Inteligencia Artificial</h2>
+                    <p data-translate="slider.slide3.description">Automatización y machine learning</p>
+                </div>
+            </div>
+            <div class="slider-slide">
+                <div class="slider-content">
+                    <h2 data-translate="slider.slide4.title">Consultoría IT</h2>
+                    <p data-translate="slider.slide4.description">Asesoramiento experto en tecnología</p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+        <button class="slider-btn prev" id="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn next" id="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title" data-translate="services.title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 data-translate="services.web.title">Desarrollo Web</h3>
+                    <p data-translate="services.web.description">Sitios web modernos, responsivos y optimizados para SEO</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-translate="services.mobile.title">Apps Móviles</h3>
+                    <p data-translate="services.mobile.description">Aplicaciones nativas para iOS y Android con UX excepcional</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-translate="services.ai.title">Inteligencia Artificial</h3>
+                    <p data-translate="services.ai.description">Soluciones de IA y machine learning para tu negocio</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 data-translate="services.cloud.title">Cloud Computing</h3>
+                    <p data-translate="services.cloud.description">Infraestructura en la nube escalable y segura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section class="gallery" id="galeria">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery.title">Galería de Proyectos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Proyecto 1">
+                    <div class="gallery-overlay">
+                        <h3 data-translate="gallery.project1.title">E-commerce Platform</h3>
+                        <p data-translate="gallery.project1.description">Plataforma de comercio electrónico</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Proyecto 2">
+                    <div class="gallery-overlay">
+                        <h3 data-translate="gallery.project2.title">App de Delivery</h3>
+                        <p data-translate="gallery.project2.description">Aplicación móvil de entrega</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop" alt="Proyecto 3">
+                    <div class="gallery-overlay">
+                        <h3 data-translate="gallery.project3.title">Dashboard Analytics</h3>
+                        <p data-translate="gallery.project3.description">Panel de análisis de datos</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Proyecto 4">
+                    <div class="gallery-overlay">
+                        <h3 data-translate="gallery.project4.title">CRM System</h3>
+                        <p data-translate="gallery.project4.description">Sistema de gestión de clientes</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Proyecto 5">
+                    <div class="gallery-overlay">
+                        <h3 data-translate="gallery.project5.title">AI Chatbot</h3>
+                        <p data-translate="gallery.project5.description">Chatbot inteligente</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop" alt="Proyecto 6">
+                    <div class="gallery-overlay">
+                        <h3 data-translate="gallery.project6.title">Mobile Banking</h3>
+                        <p data-translate="gallery.project6.description">Aplicación bancaria móvil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Embebido -->
+    <section class="video-section" id="video">
+        <div class="container">
+            <h2 class="section-title" data-translate="video.title">Video de Presentación</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/jNQXAC9IVRw" 
+                    title="TechVision Presentation" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.title">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact.info.title">Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-translate="contact.info.address">Dirección</h4>
+                            <p data-translate="contact.info.address.value">Cq. 1 #70-01, Medellín, Colombia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-translate="contact.info.phone">Teléfono</h4>
+                            <p data-translate="contact.info.phone.value">+57 316 0571065</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-translate="contact.info.email">Email</h4>
+                            <p data-translate="contact.info.email.value">info@techvision.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" data-translate="contact.form.name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu email" data-translate="contact.form.email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto" data-translate="contact.form.subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje" rows="5" data-translate="contact.form.message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-translate="contact.form.submit">Enviar Mensaje</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-rocket"></i>
+                        <span>TechVision</span>
+                    </div>
+                    <p data-translate="footer.description">Transformando el futuro con tecnología innovadora</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer.services">Servicios</h3>
+                    <ul>
+                        <li><a href="#" data-translate="footer.services.web">Desarrollo Web</a></li>
+                        <li><a href="#" data-translate="footer.services.mobile">Apps Móviles</a></li>
+                        <li><a href="#" data-translate="footer.services.ai">Inteligencia Artificial</a></li>
+                        <li><a href="#" data-translate="footer.services.consulting">Consultoría IT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer.company">Empresa</h3>
+                    <ul>
+                        <li><a href="#" data-translate="footer.company.about">Sobre Nosotros</a></li>
+                        <li><a href="#" data-translate="footer.company.team">Equipo</a></li>
+                        <li><a href="#" data-translate="footer.company.careers">Carreras</a></li>
+                        <li><a href="#" data-translate="footer.company.blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-translate="footer.contact">Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-translate="footer.contact.address">Cq. 1 #70-01, Medellín, Colombia</span></li>
+                        <li><i class="fas fa-phone"></i> <span data-translate="footer.contact.phone">+57 316 0571065</span></li>
+                        <li><i class="fas fa-envelope"></i> <span data-translate="footer.contact.email">info@techvision.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TechVision. <span data-translate="footer.rights">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante (Posicionamiento fijo) -->
+    <div class="floating-btn" id="floatingBtn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+</body>
+</html> 
